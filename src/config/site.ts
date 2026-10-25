@@ -14,6 +14,10 @@ export const siteConfig = {
   },
   location: "Jl. Tlompak RT.03/RW.08, Kelurahan Tandang, Kecamatan Tembalang, Kota Semarang 50274",
   email: "sobatrent@gmail.com",
+  socials: {
+    instagram: "https://www.instagram.com/sobatrent/",
+    tiktok: "https://www.tiktok.com/@sobattransport",
+  },
   contacts: {
     reservation: [
       { name: "Reni", phone: "0811 2792 600" },

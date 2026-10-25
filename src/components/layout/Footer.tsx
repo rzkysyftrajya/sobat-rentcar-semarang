@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, MessageCircle, Music2, Phone } from "lucide-react";
 
 import { navigation, siteConfig } from "@/config/site";
 import { services } from "@/data/services";
@@ -27,6 +27,33 @@ export function Footer() {
               Layanan transportasi di Semarang dan sekitarnya untuk kebutuhan pribadi, keluarga,
               bisnis, dan wisata.
             </p>
+            <div className="mt-5">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-gold">
+                Ikuti kami
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <a
+                  href={siteConfig.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram Sobat RentCar"
+                  className="inline-flex min-h-10 items-center gap-2 rounded-md border border-white/15 px-3 text-sm text-white/80 transition-colors hover:border-white/30 hover:text-white"
+                >
+                  <Instagram aria-hidden="true" className="size-4" />
+                  Instagram
+                </a>
+                <a
+                  href={siteConfig.socials.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok Sobat RentCar"
+                  className="inline-flex min-h-10 items-center gap-2 rounded-md border border-white/15 px-3 text-sm text-white/80 transition-colors hover:border-white/30 hover:text-white"
+                >
+                  <Music2 aria-hidden="true" className="size-4" />
+                  TikTok
+                </a>
+              </div>
+            </div>
           </div>
 
           <nav aria-label="Navigasi footer">
