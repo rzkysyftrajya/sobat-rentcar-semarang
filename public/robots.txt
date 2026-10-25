@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Crawl-delay: informational only
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://sobatrentcarsemarang.com/sitemap.xml
