@@ -15,7 +15,7 @@ import elfLong19Seat from "@/assets/armada/elf-long-19-seat.webp";
 import fortunerGr from "@/assets/armada/fortuner-gr.webp";
 import fortunerLegender from "@/assets/armada/fortuner-legender.webp";
 import hiaceCommuter15Seat from "@/assets/armada/hiace-commuter-15-seat.webp";
-import hiacePremio14Seat from "@/assets/armada/hiace-premio-14-seat.webp";
+import hiacePremio14Seat from "@/assets/armada/Hiace-Premio-14-Seat.webp";
 import innovaVenturer from "@/assets/armada/innova-venturer.webp";
 import innovaZenixGHev from "@/assets/armada/innova-zenix-g-hev.webp";
 import innovaZenixQHev from "@/assets/armada/innova-zenix-q-hev.webp";
