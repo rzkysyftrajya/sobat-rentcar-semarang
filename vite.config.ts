@@ -17,7 +17,7 @@ export default defineConfig(() => ({
         },
       },
     }),
-    nitro({ preset: "cloudflare-module" }),
+    nitro(),
     react(),
   ],
   resolve: {
