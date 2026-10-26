@@ -41,10 +41,13 @@ import communityPress from "@/assets/komunitas-rental/community-press.webp";
 import communityKorembi from "@/assets/komunitas-rental/community-korembi.webp";
 import communityTripArta from "@/assets/komunitas-rental/community-trip-arta.webp";
 import communitySemarangHebat from "@/assets/komunitas-rental/community-semarang-hebat.webp";
+import communityAsperda from "@/assets/komunitas-rental/asperda.webp";
+import communityBravoJateng from "@/assets/komunitas-rental/bravo-jateng.webp";
 import clientAkademiKepolisian from "@/assets/klien/Akademi-Kepolisian.webp";
 import clientAngkasaPura from "@/assets/klien/angkasa-pura.webp";
 import clientBappenas from "@/assets/klien/bappenas.webp";
 import clientDprRi from "@/assets/klien/DPR-RI.webp";
+import clientKejaksaanAgung from "@/assets/klien/kejaksaan-agung-ri.webp";
 import clientKemenag from "@/assets/klien/kemenag.webp";
 import clientKemenkes from "@/assets/klien/kemenkes.webp";
 import clientKemenkoPerekonomian from "@/assets/klien/kemenko-perekonomian.webp";
@@ -748,6 +751,8 @@ function Index() {
                       image: communitySemarangHebat,
                       alt: "Logo komunitas Semarang Hebat",
                     },
+                    { image: communityAsperda, alt: "Logo Asperda Indonesia" },
+                    { image: communityBravoJateng, alt: "Logo Bravo Jateng DIY" },
                   ].map((community) => (
                     <div
                       key={community.alt}
@@ -803,6 +808,7 @@ function Index() {
               { name: "Kemenag (Kementerian Agama)", image: clientKemenag },
               { name: "Angkasa Pura", image: clientAngkasaPura },
               { name: "DPR RI", image: clientDprRi },
+              { name: "Kejaksaan Agung RI", image: clientKejaksaanAgung },
             ].map((client) => (
               <li
                 key={client.name}

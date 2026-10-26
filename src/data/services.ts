@@ -1,5 +1,5 @@
 /**
- * Data layanan. Hanya menampilkan layanan yang disebut website lama;
+ * Data layanan yang ditampilkan di website;
  * setiap layanan punya flag `active` agar mudah dinonaktifkan.
  * Jangan menambah klaim operasional (syarat, cakupan wilayah, fasilitas) di sini.
  */
@@ -147,6 +147,29 @@ export const services: Service[] = [
       "Rombongan wisata keluarga atau komunitas.",
     ],
     consultNeeds: ["Destinasi yang ingin dikunjungi.", "Durasi perjalanan.", "Jumlah peserta."],
+    active: true,
+  },
+  {
+    id: "sewa-mobil-pengantin",
+    title: "Layanan Sewa Mobil Pengantin",
+    slug: "sewa-mobil-pengantin",
+    shortDescription:
+      "Pilihan kendaraan untuk mendukung kebutuhan transportasi pada hari pernikahan.",
+    benefits: [
+      "Kebutuhan kendaraan untuk rangkaian acara dapat dikonsultasikan terlebih dahulu.",
+      "Pilihan kendaraan dapat disesuaikan dengan kebutuhan perjalanan acara.",
+      "Rencana perjalanan dan waktu penggunaan dibahas sebelum pemesanan.",
+    ],
+    suitableFor: [
+      "Pasangan yang membutuhkan kendaraan untuk hari pernikahan.",
+      "Perjalanan antara lokasi persiapan, prosesi, dan resepsi.",
+      "Keluarga yang membutuhkan transportasi untuk rangkaian acara pernikahan.",
+    ],
+    consultNeeds: [
+      "Tanggal dan lokasi acara.",
+      "Rute atau rangkaian perjalanan yang direncanakan.",
+      "Durasi penggunaan dan jenis kendaraan yang diinginkan.",
+    ],
     active: true,
   },
 ];

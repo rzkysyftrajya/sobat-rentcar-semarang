@@ -11,7 +11,7 @@ import { services } from "@/data/services";
 
 const pageTitle = `Layanan | ${siteConfig.name}`;
 const pageDescription =
-  "Kenali pilihan layanan Sobat RentCar Semarang untuk perjalanan dengan driver, lepas kunci, keluarga, bisnis, rombongan, dan wisata. Detail layanan dan ketersediaan perlu dikonfirmasi.";
+  "Kenali pilihan layanan Sobat RentCar Semarang untuk perjalanan dengan driver, lepas kunci, keluarga, bisnis, rombongan, wisata, dan sewa mobil pengantin. Detail layanan dan ketersediaan perlu dikonfirmasi.";
 const canonicalUrl = new URL("/layanan", siteConfig.domain).href;
 
 export const Route = createFileRoute("/layanan")({
@@ -35,6 +35,7 @@ const serviceIcons: Record<string, React.ElementType> = {
   "perjalanan-bisnis": Briefcase,
   "transportasi-rombongan": Users,
   "perjalanan-wisata": MapPin,
+  "sewa-mobil-pengantin": Car,
 };
 
 function Services() {

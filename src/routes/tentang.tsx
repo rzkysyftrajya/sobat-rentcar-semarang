@@ -26,10 +26,13 @@ import communityPress from "@/assets/komunitas-rental/community-press.webp";
 import communityKorembi from "@/assets/komunitas-rental/community-korembi.webp";
 import communityTripArta from "@/assets/komunitas-rental/community-trip-arta.webp";
 import communitySemarangHebat from "@/assets/komunitas-rental/community-semarang-hebat.webp";
+import communityAsperda from "@/assets/komunitas-rental/asperda.webp";
+import communityBravoJateng from "@/assets/komunitas-rental/bravo-jateng.webp";
 import clientAkademiKepolisian from "@/assets/klien/Akademi-Kepolisian.webp";
 import clientAngkasaPura from "@/assets/klien/angkasa-pura.webp";
 import clientBappenas from "@/assets/klien/bappenas.webp";
 import clientDprRi from "@/assets/klien/DPR-RI.webp";
+import clientKejaksaanAgung from "@/assets/klien/kejaksaan-agung-ri.webp";
 import clientKemenag from "@/assets/klien/kemenag.webp";
 import clientKemenkes from "@/assets/klien/kemenkes.webp";
 import clientKemenkoPerekonomian from "@/assets/klien/kemenko-perekonomian.webp";
@@ -263,13 +266,13 @@ function About() {
         <div className="mx-auto max-w-6xl overflow-hidden px-4 py-10 sm:px-6 sm:py-12">
           <div className="mb-6 max-w-sm">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold">
-              Jejaring rental
+              Komunitas & asosiasi
             </p>
             <h2 className="mt-2 font-display text-xl font-semibold text-foreground">
-              Tumbuh bersama komunitas.
+              Terhubung dalam jejaring rental.
             </h2>
             <p className="mt-2 text-sm leading-6 text-muted-foreground">
-              Bagian dari semangat kebersamaan para pelaku rental mobil.
+              Bagian dari komunitas dan asosiasi pelaku rental mobil.
             </p>
           </div>
           <div className="community-marquee overflow-hidden">
@@ -291,6 +294,8 @@ function About() {
                       image: communitySemarangHebat,
                       alt: "Logo komunitas Semarang Hebat",
                     },
+                    { image: communityAsperda, alt: "Logo Asperda Indonesia" },
+                    { image: communityBravoJateng, alt: "Logo Bravo Jateng DIY" },
                   ].map((community) => (
                     <div
                       key={community.alt}
@@ -346,6 +351,7 @@ function About() {
               { name: "Kemenag (Kementerian Agama)", image: clientKemenag },
               { name: "Angkasa Pura", image: clientAngkasaPura },
               { name: "DPR RI", image: clientDprRi },
+              { name: "Kejaksaan Agung RI", image: clientKejaksaanAgung },
             ].map((client) => (
               <li
                 key={client.name}
