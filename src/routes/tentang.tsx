@@ -1,5 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Heart, Users, MapPin, MessageCircle } from "lucide-react";
+import {
+  ArrowUpRight,
+  Heart,
+  Instagram,
+  MapPin,
+  MessageCircle,
+  Music2,
+  Play,
+  Users,
+} from "lucide-react";
 
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { CtaBand } from "@/components/shared/CtaBand";
@@ -13,6 +22,23 @@ import garageMaintenance from "@/assets/garasi/garage-maintenance.webp";
 import garageFleetLineup from "@/assets/garasi/garage-fleet-lineup.webp";
 import pomnasDocumentation from "@/assets/dokumentasi-driver/driver-documentation-18.webp";
 import driverTeamGarage from "@/assets/dokumentasi-driver/driver-documentation-12.webp";
+import communityPress from "@/assets/komunitas-rental/community-press.webp";
+import communityKorembi from "@/assets/komunitas-rental/community-korembi.webp";
+import communityTripArta from "@/assets/komunitas-rental/community-trip-arta.webp";
+import communitySemarangHebat from "@/assets/komunitas-rental/community-semarang-hebat.webp";
+import clientAkademiKepolisian from "@/assets/klien/Akademi-Kepolisian.webp";
+import clientAngkasaPura from "@/assets/klien/angkasa-pura.webp";
+import clientBappenas from "@/assets/klien/bappenas.webp";
+import clientDprRi from "@/assets/klien/DPR-RI.webp";
+import clientKemenag from "@/assets/klien/kemenag.webp";
+import clientKemenkes from "@/assets/klien/kemenkes.webp";
+import clientKemenkoPerekonomian from "@/assets/klien/kemenko-perekonomian.webp";
+import clientKementerianSekretariatNegara from "@/assets/klien/kementerian-sekretariat-negara.webp";
+import clientPoldaJawaTengah from "@/assets/klien/polda-jawa-tengah.webp";
+import clientPln from "@/assets/klien/PLN.webp";
+import clientPertamina from "@/assets/klien/pertamina.webp";
+import clientPupr from "@/assets/klien/pupr.webp";
+import clientBni from "@/assets/pembayaran/bni.jpg - Diedit.webp";
 
 const pageTitle = `Tentang | ${siteConfig.name}`;
 const pageDescription =
@@ -228,6 +254,218 @@ function About() {
                 </figcaption>
               </figure>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* JEJARING RENTAL */}
+      <section className="border-t border-border/70 bg-background" aria-label="Jejaring rental">
+        <div className="mx-auto max-w-6xl overflow-hidden px-4 py-10 sm:px-6 sm:py-12">
+          <div className="mb-6 max-w-sm">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold">
+              Jejaring rental
+            </p>
+            <h2 className="mt-2 font-display text-xl font-semibold text-foreground">
+              Tumbuh bersama komunitas.
+            </h2>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              Bagian dari semangat kebersamaan para pelaku rental mobil.
+            </p>
+          </div>
+          <div className="community-marquee overflow-hidden">
+            <div className="community-marquee-track flex w-max">
+              {[0, 1].map((copy) => (
+                <div
+                  key={copy}
+                  className="flex shrink-0 gap-3 pr-3"
+                  aria-hidden={copy === 1 ? "true" : undefined}
+                >
+                  {[
+                    { image: communityPress, alt: "Logo komunitas PRESS" },
+                    {
+                      image: communityKorembi,
+                      alt: "Logo Komunitas Rental Mobil Indonesia Korembi",
+                    },
+                    { image: communityTripArta, alt: "Logo Trip Arta Indonesia" },
+                    {
+                      image: communitySemarangHebat,
+                      alt: "Logo komunitas Semarang Hebat",
+                    },
+                  ].map((community) => (
+                    <div
+                      key={community.alt}
+                      className="flex size-24 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border/70 bg-card p-2.5 sm:size-28"
+                    >
+                      <img
+                        src={community.image}
+                        alt={community.alt}
+                        className="max-h-full max-w-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* KLIEN KAMI */}
+      <section className="border-t border-border/70 bg-card" aria-labelledby="klien-kami-heading">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
+          <div className="mb-7 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold">
+              Kepercayaan
+            </p>
+            <h2
+              id="klien-kami-heading"
+              className="mt-2 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl"
+            >
+              Klien Kami
+            </h2>
+            <p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
+              Klien yang puas dengan pelayanan Sobat RentCar Semarang.
+            </p>
+          </div>
+          <ul className="grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+            {[
+              { name: "Polda Jawa Tengah", image: clientPoldaJawaTengah },
+              { name: "Akademi Kepolisian (Akpol)", image: clientAkademiKepolisian },
+              { name: "Kemenkes", image: clientKemenkes },
+              { name: "Bappenas", image: clientBappenas },
+              { name: "PLN", image: clientPln },
+              { name: "Pertamina", image: clientPertamina },
+              { name: "PUPR", image: clientPupr },
+              {
+                name: "Kementerian Sekretariat Negara",
+                image: clientKementerianSekretariatNegara,
+              },
+              { name: "BNI", image: clientBni },
+              { name: "Kemenko Perekonomian", image: clientKemenkoPerekonomian },
+              { name: "Kemenag (Kementerian Agama)", image: clientKemenag },
+              { name: "Angkasa Pura", image: clientAngkasaPura },
+              { name: "DPR RI", image: clientDprRi },
+            ].map((client) => (
+              <li
+                key={client.name}
+                className="flex min-h-28 items-center justify-center rounded-xl border border-border/70 bg-white p-4 sm:min-h-32 sm:p-5"
+              >
+                <img
+                  src={client.image}
+                  alt={client.name}
+                  className="max-h-20 w-full object-contain sm:max-h-24"
+                  loading="lazy"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* CERITA DARI SOBAT */}
+      <section className="section-soft" aria-label="Cerita dari Sobat di media sosial">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+          <SectionHeading
+            eyebrow="Cerita dari Sobat"
+            title="Lihat keseruan perjalanan kami"
+            description="Cuplikan perjalanan dan aktivitas Sobat RentCar di media sosial."
+          />
+          <div className="mt-10 grid justify-items-center gap-8 sm:grid-cols-2 sm:items-start">
+            <article className="w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-card p-4 shadow-sm">
+              <h3 className="mb-4 text-center font-display text-lg font-bold text-foreground">
+                Video TikTok
+              </h3>
+              <a
+                href="https://vt.tiktok.com/ZSgQTb6sE/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Tonton video Sobat Transport di TikTok"
+                className="group relative block aspect-[9/16] overflow-hidden rounded-xl bg-[#111827]"
+              >
+                <img
+                  src={garageFleetLineup}
+                  alt=""
+                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-black/20"
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute left-4 top-4 rounded-full bg-black/55 px-3 py-1.5 text-xs font-bold text-white backdrop-blur-sm"
+                >
+                  @sobattransport · TikTok
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 flex items-center justify-center"
+                >
+                  <span className="flex size-16 items-center justify-center rounded-full bg-white/95 text-foreground shadow-lg transition-transform group-hover:scale-110">
+                    <Play className="ml-1 size-7 fill-current" />
+                  </span>
+                </span>
+                <span className="absolute inset-x-4 bottom-5 text-left text-sm font-semibold leading-relaxed text-white">
+                  Ready setiap hari, siap menemani perjalanan Anda
+                </span>
+              </a>
+              <a
+                href="https://vt.tiktok.com/ZSgQTb6sE/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-md border border-border text-sm font-semibold text-foreground transition-colors hover:bg-accent"
+              >
+                <Music2 aria-hidden="true" className="size-4" />
+                Tonton video di TikTok
+                <ArrowUpRight aria-hidden="true" className="size-4" />
+              </a>
+            </article>
+            <article className="w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-card p-4 shadow-sm">
+              <h3 className="mb-4 text-center font-display text-lg font-bold text-foreground">
+                Instagram Reel
+              </h3>
+              <iframe
+                src="https://www.instagram.com/reel/DKMf6j-Phuf/embed/"
+                title="Instagram Reel Sobat RentCar"
+                className="mx-auto aspect-[9/16] w-full max-w-[360px] rounded-xl bg-muted"
+                loading="lazy"
+                allow="encrypted-media; picture-in-picture"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+              <a
+                href="https://www.instagram.com/reel/DKMf6j-Phuf/?dlrf=MWpybjRsdDRia2oxdQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-md border border-border text-sm font-semibold text-foreground transition-colors hover:bg-accent"
+              >
+                <Instagram aria-hidden="true" className="size-4" />
+                Lihat di Instagram
+                <ArrowUpRight aria-hidden="true" className="size-4" />
+              </a>
+            </article>
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <a
+              href={siteConfig.socials.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-10 items-center gap-2 rounded-md bg-foreground px-4 text-sm font-semibold text-background transition-opacity hover:opacity-80"
+            >
+              <Instagram aria-hidden="true" className="size-4" />
+              Ikuti @sobatrent
+            </a>
+            <a
+              href={siteConfig.socials.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-10 items-center gap-2 rounded-md bg-foreground px-4 text-sm font-semibold text-background transition-opacity hover:opacity-80"
+            >
+              <Music2 aria-hidden="true" className="size-4" />
+              Ikuti @sobattransport
+            </a>
           </div>
         </div>
       </section>

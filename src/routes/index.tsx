@@ -41,11 +41,22 @@ import communityPress from "@/assets/komunitas-rental/community-press.webp";
 import communityKorembi from "@/assets/komunitas-rental/community-korembi.webp";
 import communityTripArta from "@/assets/komunitas-rental/community-trip-arta.webp";
 import communitySemarangHebat from "@/assets/komunitas-rental/community-semarang-hebat.webp";
+import clientAkademiKepolisian from "@/assets/klien/Akademi-Kepolisian.webp";
+import clientAngkasaPura from "@/assets/klien/angkasa-pura.webp";
+import clientBappenas from "@/assets/klien/bappenas.webp";
+import clientDprRi from "@/assets/klien/DPR-RI.webp";
+import clientKemenag from "@/assets/klien/kemenag.webp";
+import clientKemenkes from "@/assets/klien/kemenkes.webp";
+import clientKemenkoPerekonomian from "@/assets/klien/kemenko-perekonomian.webp";
+import clientKementerianSekretariatNegara from "@/assets/klien/kementerian-sekretariat-negara.webp";
+import clientPoldaJawaTengah from "@/assets/klien/polda-jawa-tengah.webp";
+import clientPln from "@/assets/klien/PLN.webp";
+import clientPertamina from "@/assets/klien/pertamina.webp";
+import clientPupr from "@/assets/klien/pupr.webp";
 import paymentBca from "@/assets/pembayaran/bca.jpg - Diedit.webp";
 import paymentBni from "@/assets/pembayaran/bni.jpg - Diedit.webp";
 import paymentBri from "@/assets/pembayaran/bri.jpg - Diedit.webp";
 import paymentDana from "@/assets/pembayaran/dana.jpg - Diedit.webp";
-import paymentGopay from "@/assets/pembayaran/gopay.jpg - Diedit.webp";
 import paymentMandiri from "@/assets/pembayaran/mandiri.jpg - Diedit.webp";
 
 const homeDescription =
@@ -757,6 +768,58 @@ function Index() {
         </div>
       </section>
 
+      {/* ── KLIEN KAMI ─────────────────────────────────────────── */}
+      <section className="border-t border-border/70 bg-card" aria-labelledby="klien-kami-heading">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
+          <div className="mb-7 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold">
+              Kepercayaan
+            </p>
+            <h2
+              id="klien-kami-heading"
+              className="mt-2 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl"
+            >
+              Klien Kami
+            </h2>
+            <p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
+              Klien yang puas dengan pelayanan Sobat RentCar Semarang.
+            </p>
+          </div>
+          <ul className="grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+            {[
+              { name: "Polda Jawa Tengah", image: clientPoldaJawaTengah },
+              { name: "Akademi Kepolisian (Akpol)", image: clientAkademiKepolisian },
+              { name: "Kemenkes", image: clientKemenkes },
+              { name: "Bappenas", image: clientBappenas },
+              { name: "PLN", image: clientPln },
+              { name: "Pertamina", image: clientPertamina },
+              { name: "PUPR", image: clientPupr },
+              {
+                name: "Kementerian Sekretariat Negara",
+                image: clientKementerianSekretariatNegara,
+              },
+              { name: "BNI", image: paymentBni },
+              { name: "Kemenko Perekonomian", image: clientKemenkoPerekonomian },
+              { name: "Kemenag (Kementerian Agama)", image: clientKemenag },
+              { name: "Angkasa Pura", image: clientAngkasaPura },
+              { name: "DPR RI", image: clientDprRi },
+            ].map((client) => (
+              <li
+                key={client.name}
+                className="flex min-h-28 items-center justify-center rounded-xl border border-border/70 bg-white p-4 sm:min-h-32 sm:p-5"
+              >
+                <img
+                  src={client.image}
+                  alt={client.name}
+                  className="max-h-20 w-full object-contain sm:max-h-24"
+                  loading="lazy"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* ── METODE PEMBAYARAN ──────────────────────────────────── */}
       <section
         className="overflow-hidden border-t border-border/70 bg-background"
@@ -787,7 +850,6 @@ function Index() {
                     { image: paymentBni, alt: "BNI" },
                     { image: paymentBri, alt: "BRI" },
                     { image: paymentDana, alt: "DANA", brand: "dana" },
-                    { image: paymentGopay, alt: "GoPay" },
                     { image: paymentMandiri, alt: "Mandiri", brand: "mandiri" },
                   ].map((payment) => (
                     <img
