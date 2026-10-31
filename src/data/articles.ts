@@ -7,7 +7,7 @@ import perjalananKeluargaImage from "@/assets/card-hero-section/perjalanan-kelua
 import pilihanArmadaImage from "@/assets/card-hero-section/pilihan-armada.webp";
 import jelajahSemarangImage from "@/assets/card-hero-section/jelajah-semarang.webp";
 import wisataPilihanImage from "@/assets/card-hero-section/wisata-pilihan.webp";
-import rombonganImage from "@/assets/artikel/Tips-Menentukan-Jenis-Kendaraan-untuk-Perjalanan-Rombongan.webp";
+import rombonganImage from "@/assets/WhatsApp Image 2026-11-01 at 04.18.15.webp";
 import rentalDriverImage from "@/assets/artikel/Rental-Mobil-dengan-Driver-atau-Lepas-Kunci.webp";
 import bandunganImage from "@/assets/artikel/persiapan-wisata-semarang-bandungan.webp";
 import penjemputanImage from "@/assets/artikel/tips-penjemputan-bandara-stasiun-semarang.webp";
@@ -250,7 +250,7 @@ export const articles: Article[] = [
     excerpt:
       "Perjalanan rombongan memerlukan perencanaan kendaraan yang lebih hati-hati, terutama saat jumlah penumpang, bagasi, dan rute lebih kompleks dibanding perjalanan individu.",
     coverImage: rombonganImage,
-    coverImageAlt: "Rombongan wisatawan berfoto di samping minibus untuk perjalanan bersama",
+    coverImageAlt: "Rombongan wisatawan berfoto di depan bus pariwisata",
     category: "Tips Perjalanan",
     publishedAt: "2026-10-20",
     content: [
